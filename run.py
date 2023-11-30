@@ -14,5 +14,5 @@ with st.form(key='my_form'):
 
 # Khi người dùng nhấn nút "Chạy Nhận Diện"
 if submit_button:
-    command = f"python detect.py --weights {weight_file} --img {image_size} --conf {confidence_threshold} --source {source}"
+    command = f"python detect.py --weights best.pt --img 416 --conf 0.5 --source 0"
     os.system(command)
